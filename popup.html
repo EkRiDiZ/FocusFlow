@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>FocusFlow Reader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>FocusFlow Reader</h2>
+
+  <div id="modeSelection" class="row">
+    <button id="adhdMode" class="modeBtn">ADHD Mode</button>
+    <button id="dyslexiaMode" class="modeBtn">Dyslexia Mode</button>
+  </div>
+
+  <div id="adhdUI" style="display:none;">
+    <div id="output" class="output">Select text on a webpage and click "Simplify Selected Text".</div>
+    <div id="loader" class="loader" style="display:none;"></div>
+    <button id="simplifySelection" class="actionBtn">Simplify Selected Text</button>
+  </div>
+
+  <div id="dyslexiaUI" style="display:none;">
+    <div id="outputDyslexia" class="output">Select text to convert for dyslexia-friendly reading.</div>
+    
+    <div id="loaderDys" class="loader" style="display:none;"></div>
+    <div id="progress" style="text-align:center; margin-bottom:8px; display:none;"></div>
+    
+    <button id="dyslexiaSelection" class="actionBtn">Convert Selected Text</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
